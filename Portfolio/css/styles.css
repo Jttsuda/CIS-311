@@ -66,7 +66,7 @@ nav li {
     font-size: 1.5em;
     font-family: Geneva, Arial, sans-serif;
     font-weight: bold;
-    padding: 0.5% 1.5%;
+    padding: 5px 10px;
 }
 
 /* Style rules for main content */
@@ -108,4 +108,43 @@ footer a {
     color: #f3e6d8;
     font-weight: bold;
     font-style: italic;
+}
+
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 620px),
+print {
+
+    /* Tablet Viewport: Show tab-desk class, hide mobile class */
+    .tab-desk {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        display: inline-block;
+        font-size: 1.25em;
+    }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1000px),
+print {
+
+    /* Desktop Viewport: Style rules for nav area */
+    nav li {
+        font-size: 1.5em;
+    }
+    
+    nav li a {
+        padding: 0.25em 0.5em;
+    }
+
+    nav li a:hover {
+        color: #d6cfc8;
+    }
 }
